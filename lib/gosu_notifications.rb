@@ -1,0 +1,3 @@
+require_relative "gosu_notifications/version"
+require_relative "gosu_notifications/notification_manager"
+require_relative "gosu_notifications/notification"
