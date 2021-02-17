@@ -6,8 +6,8 @@ class Window < Gosu::Window
     super 640, 480, false
     self.caption = "Gosu Notifications Demo"
 
-    @notification_manager = GosuNotifications::Manager.new(window: self, max_visible: 5)
-    @notification_manager_mouse = GosuNotifications::Manager.new(edge: :bottom, mode: GosuNotifications::Manager::MODE_CIRCLE, window: self, max_visible: 1)
+    @notification_manager = GosuNotifications::NotificationManager.new(window: self, max_visible: 5)
+    @notification_manager_mouse = GosuNotifications::NotificationManager.new(edge: :bottom, mode: GosuNotifications::NotificationManager::MODE_CIRCLE, window: self, max_visible: 1)
     @font = Gosu::Font.new(22)
     @text = "Press a Button"
 
